@@ -1,7 +1,24 @@
-# Awesome-Monte-Carlo-Tree-Search
-## Monte Carlo Tree Search (MCTS)
+<div align="center">
+  <img src="./assets/banner.svg" alt="Awesome MCTS Banner" width="800">
 
-Monte Carlo Tree Search (MCTS) is a heuristic search algorithm used for decision-making and optimal control. It builds a tree of potential actions and outcomes, using random sampling (rollouts) and statistical analysis to balance the **exploration** of new options with the **exploitation** of promising paths.
+  <h1>🚀 Awesome Monte Carlo Tree Search (MCTS) 🌳</h1>
+
+  <p>
+    <a href="https://github.com/ishandutta2007/Awesome-Monte-Carlo-Tree-Search/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Monte-Carlo-Tree-Search?style=for-the-badge" alt="Stars"></a>
+    <a href="https://github.com/ishandutta2007/Awesome-Monte-Carlo-Tree-Search/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Monte-Carlo-Tree-Search?style=for-the-badge" alt="Forks"></a>
+    <a href="https://github.com/ishandutta2007/Awesome-Monte-Carlo-Tree-Search/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Monte-Carlo-Tree-Search?style=for-the-badge" alt="Issues"></a>
+    <a href="https://github.com/ishandutta2007/Awesome-Monte-Carlo-Tree-Search/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Monte-Carlo-Tree-Search?style=for-the-badge" alt="License"></a>
+    <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow&style=for-the-badge" /></a>
+  </p>
+
+  <p><b>A curated list of awesome Monte Carlo Tree Search (MCTS) resources, papers, and implementations.</b></p>
+</div>
+
+---
+
+## 🧐 What is Monte Carlo Tree Search?
+
+**Monte Carlo Tree Search (MCTS)** is a state-of-the-art heuristic search algorithm used for decision-making and optimal control. It builds a search tree of potential actions and outcomes, using random sampling (rollouts) and statistical analysis to balance the **exploration** of new options with the **exploitation** of promising paths. 🎮🤖
 
 ---
 
@@ -9,10 +26,10 @@ Monte Carlo Tree Search (MCTS) is a heuristic search algorithm used for decision
 
 MCTS relies on an iterative four-step loop to evaluate decisions:
 
-1. **Selection**: Navigate from the root to a promising leaf node using a tree policy (like UCT).
-2. **Expansion**: Add one or more unvisited child nodes to the selected leaf.
-3. **Simulation (Playout)**: Play out the domain randomly from the new node to a terminal state (win/loss).
-4. **Backpropagation**: Update visit counts and win/loss statistics on all nodes along the path back to the root.
+1.  **Selection** 🎯: Navigate from the root to a promising leaf node using a tree policy (like UCT).
+2.  **Expansion** 🌱: Add one or more unvisited child nodes to the selected leaf.
+3.  **Simulation (Playout)** 🎲: Play out the domain randomly from the new node to a terminal state (win/loss).
+4.  **Backpropagation** ⬆️: Update visit counts and win/loss statistics on all nodes along the path back to the root.
 
 ---
 
@@ -30,7 +47,17 @@ MCTS relies on an iterative four-step loop to evaluate decisions:
 
 ## 🌍 Real-World Examples & Applications
 
-*   **Board Games**: Tic-Tac-Toe, Chess, Checkers, and Go (AI computes future branches to guarantee a win or draw).
-*   **Video Game AI**: Turn-based strategy (e.g., *Total War* campaign AI) and RTS games to plan multiple steps ahead.
-*   **Robotics & Autonomous Driving**: Evaluates dynamic future scenarios (e.g., pedestrian movement) without requiring a completely predefined state space.
-*   **Optimization Problems**: Logistics scheduling, vehicle routing, and chemical molecule generation.
+*   **Board Games** ♟️: Tic-Tac-Toe, Chess, Checkers, and Go (AI computes future branches to guarantee a win or draw).
+*   **Video Game AI** 🎮: Turn-based strategy (e.g., *Total War* campaign AI) and RTS games to plan multiple steps ahead.
+*   **Robotics & Autonomous Driving** 🚗: Evaluates dynamic future scenarios (e.g., pedestrian movement) without requiring a completely predefined state space.
+*   **Optimization Problems** 🧪: Logistics scheduling, vehicle routing, and chemical molecule generation.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTING.md) first.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
