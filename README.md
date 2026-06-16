@@ -61,3 +61,15 @@ Contributions are welcome! Please read the [contribution guidelines](CONTRIBUTIN
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## 📈 Star History
+
+<div align="center">
+   <a href="https://www.star-history.com/#ishandutta2007/Awesome-Monte-Carlo-Tree-Search&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Monte-Carlo-Tree-Search&type=Date&theme=dark" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Monte-Carlo-Tree-Search&type=Date" />
+      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Monte-Carlo-Tree-Search&type=Date" />
+    </picture>
+   </a>
+</div>
