@@ -20,11 +20,11 @@ MCTS relies on an iterative four-step loop to evaluate decisions:
 
 | Variant | Year | Paper Link | Description & Primary Use |
 | :--- | :--- | :--- | :--- |
-| **UCT** (Upper Confidence Bounds applied to Trees) | 2006 | [Bandit based Monte-Carlo Planning](https://link.springer.com/chapter/10.1007/11871842_29) | Standard form using UCB1 formula to balance exploration and exploitation. Used in turn-based board games. |
-| **AlphaGo MCTS** (Deep-Reinforcement MCTS) | 2016 | [Mastering the game of Go with deep neural networks and tree search](https://www.nature.com/articles/nature16961) | Replaces rollouts with Value/Policy networks. Used for complex combinatorial games like Chess and Go. |
-| **RAVE** (Rapid Action Value Estimation) | 2007 | [Combining Online and Offline Knowledge in UCT](https://icml.cc/Conferences/2007/proceedings/papers/387.pdf) | Aggregates move statistics globally to speed up learning. Primarily used in the game of Go. |
-| **Progressive Widening** | 2007 | [Computing Elo Ratings of Move Patterns in the Game of Go](https://www.remi-coulom.fr/publications/alife-2007.pdf) | Manages large branching factors by limiting child expansion. Used in continuous action spaces and robotics. |
-| **Open-Loop vs. Closed-Loop MCTS** | 2010 | [Open Loop Optimistic Planning](https://hal.archives-ouvertes.fr/hal-00520428/document) | Open-Loop stores action sequences; Closed-Loop stores states. Used in non-deterministic environments. |
+| [**UCT**](./variants/uct.md) | 2006 | [Bandit based Monte-Carlo Planning](https://link.springer.com/chapter/10.1007/11871842_29) | Standard form using UCB1 formula to balance exploration and exploitation. Used in turn-based board games. |
+| [**AlphaGo MCTS**](./variants/alphago.md) | 2016 | [Mastering the game of Go with deep neural networks and tree search](https://www.nature.com/articles/nature16961) | Replaces rollouts with Value/Policy networks. Used for complex combinatorial games like Chess and Go. |
+| [**RAVE**](./variants/rave.md) | 2007 | [Combining Online and Offline Knowledge in UCT](https://icml.cc/Conferences/2007/proceedings/papers/387.pdf) | Aggregates move statistics globally to speed up learning. Primarily used in the game of Go. |
+| [**Progressive Widening**](./variants/progressive_widening.md) | 2007 | [Computing Elo Ratings of Move Patterns in the Game of Go](https://www.remi-coulom.fr/publications/alife-2007.pdf) | Manages large branching factors by limiting child expansion. Used in continuous action spaces and robotics. |
+| [**Open-Loop MCTS**](./variants/open_loop.md) | 2010 | [Open Loop Optimistic Planning](https://hal.archives-ouvertes.fr/hal-00520428/document) | Open-Loop stores action sequences; Closed-Loop stores states. Used in non-deterministic environments. |
 
 ---
 
