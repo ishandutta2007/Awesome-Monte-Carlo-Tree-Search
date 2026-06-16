@@ -18,32 +18,13 @@ MCTS relies on an iterative four-step loop to evaluate decisions:
 
 ## 🛠️ Core Types & Variants
 
-### 1. UCT (Upper Confidence Bounds applied to Trees)
-*   **Definition**: The standard, foundational form of MCTS.
-*   **Mechanism**: Uses the Multi-Armed Bandit formula to balance exploration and exploitation:
-    $$\text{UCT} = V_i + C \sqrt{\frac{\ln(N)}{n_i}}$$
-    *(Where $V_i$ is node value, $N$ is parent visits, $n_i$ is child visits, and $C$ is the exploration constant).*
-*   **Primary Use**: Turn-based board games and fundamental pathfinding.
-
-### 2. AlphaGo MCTS (Deep-Reinforcement MCTS)
-*   **Definition**: A hybrid algorithm made famous by DeepMind's AlphaGo and AlphaZero.
-*   **Mechanism**: Replaces traditional random "rollout" simulations with Deep Neural Networks. It uses a **Value Network** to estimate state values and a **Policy Network** to guide action selection, drastically speeding up decision-making.
-*   **Primary Use**: Complex combinatorial games like Chess, Shogi, and Go.
-
-### 3. RAVE (Rapid Action Value Estimation)
-*   **Definition**: A modification designed to speed up learning in large, complex trees.
-*   **Mechanism**: Aggregates statistics for moves regardless of where they are played in the tree, rather than only updating the exact sequence sequence. Uses an adaptive weight factor ($\alpha$) to transition to standard MCTS stats over time.
-*   **Primary Use**: The game of Go, where early moves have board-wide, long-lasting impacts.
-
-### 4. Progressive Widening
-*   **Definition**: An approach to manage extremely large or infinite branching factors (possible moves).
-*   **Mechanism**: Limits the number of child nodes expanded at any given state based on the number of times that state has been visited. As visit counts increase, more action actions are unlocked for expansion.
-*   **Primary Use**: Continuous action spaces in robotics or games with highly varied move types.
-
-### 5. Open-Loop vs. Closed-Loop MCTS
-*   **Open-Loop**: Records the sequence of actions taken regardless of the state reached. The tree is built purely based on *actions*.
-*   **Closed-Loop**: Records both the action and the resulting state. The tree accounts for the fact that a specific action could lead to varying states.
-*   **Primary Use**: Non-deterministic environments, robotics, and dynamic autonomous agent navigation.
+| Variant | Year | Paper Link | Description & Primary Use |
+| :--- | :--- | :--- | :--- |
+| **UCT** (Upper Confidence Bounds applied to Trees) | 2006 | [Bandit based Monte-Carlo Planning](https://link.springer.com/chapter/10.1007/11871842_29) | Standard form using UCB1 formula to balance exploration and exploitation. Used in turn-based board games. |
+| **AlphaGo MCTS** (Deep-Reinforcement MCTS) | 2016 | [Mastering the game of Go with deep neural networks and tree search](https://www.nature.com/articles/nature16961) | Replaces rollouts with Value/Policy networks. Used for complex combinatorial games like Chess and Go. |
+| **RAVE** (Rapid Action Value Estimation) | 2007 | [Combining Online and Offline Knowledge in UCT](https://icml.cc/Conferences/2007/proceedings/papers/387.pdf) | Aggregates move statistics globally to speed up learning. Primarily used in the game of Go. |
+| **Progressive Widening** | 2007 | [Computing Elo Ratings of Move Patterns in the Game of Go](https://www.remi-coulom.fr/publications/alife-2007.pdf) | Manages large branching factors by limiting child expansion. Used in continuous action spaces and robotics. |
+| **Open-Loop vs. Closed-Loop MCTS** | 2010 | [Open Loop Optimistic Planning](https://hal.archives-ouvertes.fr/hal-00520428/document) | Open-Loop stores action sequences; Closed-Loop stores states. Used in non-deterministic environments. |
 
 ---
 
